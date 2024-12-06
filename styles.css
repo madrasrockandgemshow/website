@@ -5,11 +5,25 @@ body {
     margin: 0;
     padding: 0;
 }
-header, footer {
+footer {
     background-color: #002b7f;
     color: #f9dc3c;
     padding: 1em;
     text-align: center;
+}
+
+header {
+    background-image: url('assets/images/header2.jpeg'); /* Replace with the URL of your image */
+    background-size: cover; /* Ensures the full image is shown */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+
+}
+.text-container {
+    background-color: rgba(0, 43, 92, 0.8); /* Oregon blue with 80% opacity */
+    color: #FFD700; /* Oregon yellow for text */
+    text-align: center;
+    padding: 20px;
 }
 button {
     background-color: #f9dc3c;
