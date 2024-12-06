@@ -1,0 +1,37 @@
+
+body {
+    font-family: Arial, sans-serif;
+    color: #1d1d1d;
+    margin: 0;
+    padding: 0;
+}
+header, footer {
+    background-color: #002b7f;
+    color: #f9dc3c;
+    padding: 1em;
+    text-align: center;
+}
+button {
+    background-color: #f9dc3c;
+    border: none;
+    padding: 10px;
+    color: #002b7f;
+    cursor: pointer;
+}
+#show-details, #vendor-registration, #map-carousel, #facebook-feed {
+    margin: 20px;
+    padding: 15px;
+}
+#facebook-feed iframe {
+    width: 100%;
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #222;
+        color: #ccc;
+    }
+    header, footer {
+        background-color: #333;
+        color: #f9dc3c;
+    }
+}

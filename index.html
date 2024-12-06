@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madras Rock and Gem Show</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Madras Rock and Gem Show</h1>
+        <p>June 26-29, 2025 | Fairgrounds, Madras, Oregon</p>
+        <button onclick="window.location.href='https://venmo.com/madrasrockgemshow'">Pay via Venmo</button>
+    </header>
+
+    <section id="show-details">
+        <h2>Event Highlights</h2>
+        <p>Explore the amazing world of rocks and gems in Oregon's beautiful Madras fairgrounds. Vendors, displays, and activities for all ages!</p>
+    </section>
+
+    <section id="vendor-registration">
+        <h2>Vendor Registration</h2>
+        <form action="register.php" method="post" enctype="multipart/form-data">
+            <label for="name">Vendor Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="ad">Upload Advertisement (JPG, PNG, PDF):</label>
+            <input type="file" id="ad" name="ad" accept=".jpg,.jpeg,.png,.pdf" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <section id="map-carousel">
+        <h2>Event Map & Vendor Ads</h2>
+        <a href="map.pdf" download>Download Event Map (PDF)</a>
+        <div id="ad-carousel">
+            <!-- Placeholder for ad images -->
+        </div>
+    </section>
+
+    <aside id="facebook-feed">
+        <h2>Stay Connected</h2>
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/madrasrocksandgems&tabs=timeline"
+                width="300" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    </aside>
+
+    <footer>
+        <p>&copy; 2025 Madras Rock and Gem Show</p>
+    </footer>
+</body>
+</html>
