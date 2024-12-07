@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    overflow-x: hidden; /* Disable horizontal scrolling */
 }
 
 footer {
@@ -53,9 +54,12 @@ button {
     }
 }
 
+/* Ensure the Swiper container doesn't cause overflow */
 .swiper-container {
     width: 90%;
     margin: 2rem auto;
+    max-width: 100%; /* Prevent it from exceeding the viewport width */
+    overflow: hidden; /* Ensure no extra content spills out */
 }
 
 .carousel-item {
