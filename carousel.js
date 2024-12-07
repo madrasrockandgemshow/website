@@ -31,29 +31,45 @@ const vendors = [
     },
 ];
 
-// Function to populate carousel
-function populateCarousel() {
-    const carousel = document.getElementById('vendorCarousel');
-    vendors.forEach(vendor => {
-        const item = document.createElement('div');
-        item.className = 'carousel-item';
-        item.innerHTML = `
+// Populate Swiper slides
+const swiperWrapper = document.querySelector('.swiper-wrapper');
+vendors.forEach(vendor => {
+    const slide = document.createElement('div');
+    slide.className = 'swiper-slide';
+    slide.innerHTML = `
+        <div class="carousel-item">
             <img src="assets/vendors/${vendor.image}" alt="${vendor.title}">
             <h3>${vendor.title}</h3>
             <p>${vendor.description}</p>
-        `;
-        carousel.appendChild(item);
-    });
-}
-
-// Carousel scroll buttons
-document.getElementById('scrollLeft').addEventListener('click', () => {
-    document.getElementById('vendorCarousel').scrollBy({ left: -300, behavior: 'smooth' });
+        </div>
+    `;
+    swiperWrapper.appendChild(slide);
 });
 
-document.getElementById('scrollRight').addEventListener('click', () => {
-    document.getElementById('vendorCarousel').scrollBy({ left: 300, behavior: 'smooth' });
+// Initialize Swiper
+const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+    },
 });
-
-// Initialize carousel
-populateCarousel();

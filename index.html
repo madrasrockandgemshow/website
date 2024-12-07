@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Madras Rock and Gem Show</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
 </head>
@@ -37,19 +38,17 @@
             activities for all ages!</p>
     </section>    
 
-    <section id="map-carousel">
+    <section id="vendor-carousel">
         <h2>Event Vendors</h2>
-        <div id="ad-carousel">
-            <div class="carousel-container">
-                <button class="carousel-button left" id="scrollLeft">&#10094;</button>
-                <div class="carousel" id="vendorCarousel">
-                    <!-- Vendor items will be dynamically added here -->
-                </div>
-                <button class="carousel-button right" id="scrollRight">&#10095;</button>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Add vendor slides dynamically -->
             </div>
-        
-            <script src="carousel.js"></script>
         </div>
+    
+        <!-- Swiper.js JavaScript -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="carousel.js"></script>
     </section>
 
     <aside id="facebook-feed">
