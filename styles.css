@@ -4,6 +4,7 @@ body {
     color: #1d1d1d;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 .carousel-container {
@@ -116,10 +117,12 @@ button {
 #show-details, #vendor-registration, #map-carousel, #facebook-feed {
     margin: 20px;
     padding: 15px;
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack the title above the content */
+    align-items: center; /* Center align the items within the block */
+    text-align: center; /* Ensure text inside the block is also centered */
 }
-#facebook-feed iframe {
-    width: 100%;
-}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #222;

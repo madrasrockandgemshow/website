@@ -1,29 +1,33 @@
-// Sample vendor data
 const vendors = [
     {
         image: 'Seaside-Stone-LLC.png',
         title: 'Seaside Stone, LLC',
-        description: 'Beautiful stones from the beach.'
+        description: 'Beautiful stones from the beach.',
+        url: ''
     },
     {
         image: 'JHF-Stones.jpg',
         title: 'JHF Stones',
-        description: '2'
+        description: '2',
+        url: ''
     },
     {
         image: 'Rough-Rock-Lapidary.jpg',
         title: 'Rough Rock & Lapidary',
-        description: 'Description for Vendor 3.'
+        description: 'Description for Vendor 3.',
+        url: ''
     },
     {
         image: 'DeMaris-Rock-Products.jpg',
         title: 'DeMaris Rock Products',
-        description: 'Description for Vendor 4.'
+        description: 'Description for Vendor 4.',
+        url: ''
     },
     {
         image: 'Zat-Blune-Stone.jpg',
         title: 'Zat Blune Stone',
-        description: 'Description for Vendor 5.'
+        description: 'Description for Vendor 5.',
+        url: ''
     },
 ];
 
