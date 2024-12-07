@@ -13,9 +13,9 @@ document.getElementById('registration-form').addEventListener('submit', function
     }
 
     // Validate file type and size
-    const allowedTypes = ['image/jpeg', 'image/png', 'application/pdf'];
+    const allowedTypes = ['image/jpeg', 'image/png'];
     if (!allowedTypes.includes(file.type)) {
-        document.getElementById('response-message').innerText = "Invalid file type. Please upload a JPG, PNG, or PDF file.";
+        document.getElementById('response-message').innerText = "Invalid file type. Please upload a JPG or PNG.";
         return;
     }
 
@@ -27,10 +27,10 @@ document.getElementById('registration-form').addEventListener('submit', function
     // Prepare mailto link
     const subject = encodeURIComponent("Vendor Registration Submission");
     const body = encodeURIComponent(
-        `Vendor Name: ${name}\nEmail: ${email}\nFile Name: ${file.name}\n\nPlease check the attached file manually.`
+        `Vendor Name: ${name}\nEmail: ${email}\nFile Name: ${file.name}\n\nPlease add your advertisement image as an attachment to this email. We will add it to the website.`
     );
 
-    const mailtoLink = `mailto:your-email@example.com?subject=${subject}&body=${body}`;
+    const mailtoLink = `mailto:madrasrockandgemshow@gmail.com?subject=${subject}&body=${body}`;
     window.location.href = mailtoLink;
 
     // Inform user
