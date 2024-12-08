@@ -43,6 +43,12 @@ button {
     text-align: center; /* Ensure text inside the block is also centered */
 }
 
+#facebook-feed iframe {
+    width: 100%;
+    max-width: 350px;
+    height: 500px;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #222;
