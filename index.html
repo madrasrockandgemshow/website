@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/swiper-styles.css">
-    <script src="scripts.js" defer></script>
+    <script src="js/facebook.js"></script>
 </head>
 
 <body>
@@ -52,11 +52,21 @@
 
     <aside id="facebook-feed">
         <h2>Stay Connected</h2>
-        <iframe
-        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmadrasrocksandgems&tabs=timeline"
-        style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-        allowfullscreen="true"
-        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>    
+        <!-- Facebook iframe for desktop -->
+        <div id="desktop-facebook">
+            <iframe
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmadrasrocksandgems&tabs=timeline"
+                width="350" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+        
+        <!-- Button for mobile since iframe doesnt work -->
+        <div id="mobile-facebook" style="display:none;">
+            <a href="https://www.facebook.com/madrasrocksandgems" target="_blank">
+                <button>Connect with us on Facebook</button>
+            </a>
+        </div>
     </aside>
 
     <section id="vendor-registration">

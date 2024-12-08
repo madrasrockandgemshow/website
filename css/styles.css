@@ -27,13 +27,16 @@ header {
     text-align: center;
     padding: 20px;
 }
+
 button {
     background-color: #f9dc3c;
     border: none;
     padding: 10px;
     color: #002b7f;
     cursor: pointer;
+    border-radius: 10px;
 }
+
 #show-details, #vendor-registration, #facebook-feed {
     margin: 20px;
     padding: 15px;
@@ -58,43 +61,4 @@ button {
         background-color: #333;
         color: #f9dc3c;
     }
-}
-
-/* Ensure the Swiper container doesn't cause overflow */
-.swiper-container {
-    width: 90%;
-    margin: 2rem auto;
-    max-width: 100%; /* Prevent it from exceeding the viewport width */
-    overflow: hidden; /* Ensure no extra content spills out */
-}
-
-.carousel-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #fff;
-    text-align: center;
-    padding: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.carousel-item img {
-    max-width: 100%;
-    max-height: 150px;
-    object-fit: contain;
-    border-radius: 4px;
-    margin-bottom: 1rem;
-}
-
-.carousel-item h3 {
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
-}
-
-.carousel-item p {
-    font-size: 0.9rem;
-    color: #555;
 }
