@@ -6,6 +6,16 @@ body {
     padding: 0;
     text-align: center;
     overflow-x: hidden; /* Disable horizontal scrolling */
+    background-color: #f4f8fb; /* Light blue that complements the theme */
+}
+
+h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #002b7f;
 }
 
 footer {
