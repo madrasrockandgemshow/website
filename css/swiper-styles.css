@@ -29,11 +29,25 @@
 }
 
 .carousel-item h3 {
+    color:black;
     font-size: 1.2rem;
     margin: 0.5rem 0;
 }
 
 .carousel-item p {
     font-size: 0.9rem;
-    color: #555;
+    color: #555;    
+}
+
+@media (prefers-color-scheme: dark) {
+    .carousel-item h3 {
+        color: #f9dc3c;
+    }
+    .carousel-item p {
+        color: #ccc;
+    }
+    .carousel-item {
+        background-color: #333;
+        color: #f9dc3c;
+    }
 }

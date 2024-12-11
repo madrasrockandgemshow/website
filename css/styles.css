@@ -1,14 +1,3 @@
-
-body {
-    font-family: Arial, sans-serif;
-    color: #1d1d1d;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    overflow-x: hidden; /* Disable horizontal scrolling */
-    background-color: #f4f8fb; /* Light blue that complements the theme */
-}
-
 h1 {
     font-weight: bold;
     text-transform: uppercase;
@@ -18,24 +7,34 @@ h2 {
     color: #002b7f;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    color: #1d1d1d;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow-x: hidden; 
+    /* background-color: #f4f8fb; */
+}
+
+header {
+    background-image: url('../assets/images/header.jpeg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+.text-container {
+    background-color: rgba(0, 43, 92, 0.8); 
+    color: #FFD700; 
+    text-align: center;
+    padding: 20px;
+}
+
 footer {
     background-color: #002b7f;
     color: #f9dc3c;
     padding: 1em;
     text-align: center;
-}
-
-header {
-    background-image: url('assets/images/header2.jpeg'); /* Replace with the URL of your image */
-    background-size: cover; /* Ensures the full image is shown */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-position: center; /* Centers the image */
-}
-.text-container {
-    background-color: rgba(0, 43, 92, 0.8); /* Oregon blue with 80% opacity */
-    color: #FFD700; /* Oregon yellow for text */
-    text-align: center;
-    padding: 20px;
 }
 
 button {
@@ -47,7 +46,7 @@ button {
     border-radius: 10px;
 }
 
-#show-details, #vendor-registration, #facebook-feed {
+#show-details, #vendor-registration {
     margin: 20px;
     padding: 15px;
     display: flex; /* Enable flexbox */
@@ -56,9 +55,8 @@ button {
     text-align: center; /* Ensure text inside the block is also centered */
 }
 
-#facebook-feed iframe {
-    width: 100%;
-    max-width: 350px;
+#desktop-facebook iframe {
+    width: 350px;
     height: 500px;
 }
 
@@ -66,6 +64,9 @@ button {
     body {
         background-color: #222;
         color: #ccc;
+    }
+    h2 {
+        color: #f9dc3c;
     }
     header, footer {
         background-color: #333;
