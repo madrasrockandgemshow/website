@@ -31,11 +31,26 @@ header {
 }
 
 footer {
-    background-color: #002b7f;
-    color: #f9dc3c;
+    background-color: #002b7f; /* Dark blue background */
+    color: #f9dc3c;           /* Yellow text */
     padding: 1em;
     text-align: center;
 }
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em; /* Space between logo and text */
+}
+
+.footer-logo {
+    width: 50px; /* Adjust for desired size */
+    height: 50px;
+    border-radius: 8px; /* Slightly rounded corners */
+    object-fit: scale-down; /* Ensures the logo maintains proportions */
+}
+
 
 button {
     background-color: #f9dc3c;
