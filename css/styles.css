@@ -14,14 +14,14 @@ body {
     padding: 0;
     text-align: center;
     overflow-x: hidden; 
-    /* background-color: #f4f8fb; */
+    background-color: #f4f8fb;
 }
 
 header {
     background-image: url('../assets/images/header.jpeg');
     background-size: cover; 
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: bottom; 
 }
 .text-container {
     background-color: rgba(0, 43, 92, 0.8); 
@@ -68,6 +68,12 @@ button {
     flex-direction: column; /* Stack the title above the content */
     align-items: center; /* Center align the items within the block */
     text-align: center; /* Ensure text inside the block is also centered */
+}
+#registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
 }
 
 #desktop-facebook iframe {
