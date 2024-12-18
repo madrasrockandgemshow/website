@@ -1,6 +1,8 @@
     // JavaScript to toggle visibility based on screen size
 
     function isMobileDevice() {
+
+        return false
         // Check if the device is touch-enabled and has a small screen
         return (
             ("ontouchstart" in window || navigator.maxTouchPoints > 0) &&

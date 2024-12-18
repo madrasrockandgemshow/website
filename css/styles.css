@@ -30,6 +30,28 @@ header {
     padding: 20px;
 }
 
+.button-container {
+    flex-direction: row; /* Buttons in a row by default */
+    gap: 5px; /* Space between buttons */
+}
+
+.button-container button {
+    padding: 10px 10px; /* Add padding around buttons */
+    font-size: 16px; /* Ensure consistent font size */
+    margin: 10px; /* Optional: Add margin for extra space */
+}
+
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    .button-container button {
+        margin: 0 0 5px 0; /* Ensure spacing when stacked */
+    }
+}
+
+
 footer {
     background-color: #002b7f; /* Dark blue background */
     color: #f9dc3c;           /* Yellow text */
