@@ -5,6 +5,7 @@ h1 {
 
 h2 {
     color: #002b7f;
+    text-align: center;
 }
 
 body {
@@ -92,10 +93,16 @@ button {
     text-align: center; /* Ensure text inside the block is also centered */
 }
 #registration-form {
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    align-items: center;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-width: 300px;
+    max-width: 325px;
 }
 
 #desktop-facebook iframe {
