@@ -4,42 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vendor Registration</title>
-    <link rel="stylesheet" href="../css/styles.css">
     <style>
-        #char-count { font-size: 0.9em; color: #868761; }
-    </style>
-</head>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        section {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #002b7f;
+            text-align: center;
+        }
+    </style></head>
 <body>
-    <section id="vendor-registration">
+    <section>
         <h2>Vendor Registration</h2>
-        <form id="registration-form">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter Name">
-
-            <label for="vendorUrl">URL to your website or social (optional)</label>
-            <input type="text" id="vendorUrl" name="vendorUrl" placeholder="Enter URL">
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Enter Email">
-
-            <label for="vendorAdText">Vendor Advertisement Text</label>
-            <input type="text" id="vendorAdText" name="vendorAdText" maxlength="140" placeholder="Enter Advertisement text" required>
-            <span id="char-count">0 / 140</span>
-
-            <label for="ad">Upload Advertisement Image (JPG, PNG)</label>
-            <input type="file" id="ad" name="ad" accept=".jpg,.jpeg,.png" required>
-    
-            <button type="submit">Register</button>
-        </form>
-        <div id="response-message"></div>
-
-        <!-- Include external JavaScript file -->
-        <script src="../js/form-handler.js"></script>
-        <script> 
-            const vendorAdText = document.getElementById('vendorAdText'); 
-            const charCount = document.getElementById('char-count'); 
-            vendorAdText.addEventListener('input', () => { charCount.textContent = `${vendorAdText.value.length} / 140`; }); 
-        </script>
+        <p>Please email the following information to <a href="mailto:madrasrockandgemshow@gmail.com">madrasrockandgemshow@gmail.com</a>:</p>
+        <ul>
+            <li>Your Name</li>
+            <li>Your Website or Social Media URL (optional)</li>
+            <li>Your Email Address</li>
+            <li>Advertisement Text (maximum 140 characters)</li>
+            <li>Advertisement Image (JPG or PNG format)</li>
+        </ul>
+        <p>Clicking the email link will open your default email client.</p>
     </section>
 </body>
 </html>
