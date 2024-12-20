@@ -123,7 +123,7 @@ button {
 
 @media (prefers-color-scheme: dark) {
     #registration-form {
-        background-color: #222;
+        background-color: #333;
     }
     body {
         background-color: #222;
