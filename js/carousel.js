@@ -3,7 +3,7 @@ const vendors = [
         image: 'Seaside-Stone-LLC.png',
         title: 'Seaside Stone, LLC',
         description: 'Beautiful stones from the beach.',
-        url: ''
+        url: 'https://www.seasidestones.com'
     },
     {
         image: 'JHF-Stones.jpg',
@@ -41,8 +41,15 @@ vendors.forEach(vendor => {
             <img src="assets/vendors/${vendor.image}" alt="${vendor.title}">
             <h3>${vendor.title}</h3>
             <p>${vendor.description}</p>
+            ${vendor.url ? '<span class="link-icon">🔗</span>' : ''}
         </div>
     `;
+    slide.addEventListener('click', () => {
+        if (vendor.url) {
+            window.open(vendor.url, '_blank');
+        }
+    });
+    swiperWrapper.appendChild(slide);
     swiperWrapper.appendChild(slide);
 });
 
