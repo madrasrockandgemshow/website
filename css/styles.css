@@ -74,7 +74,6 @@ footer {
     object-fit: scale-down; /* Ensures the logo maintains proportions */
 }
 
-
 button {
     background-color: #f9dc3c;
     border: none;
@@ -82,6 +81,7 @@ button {
     color: #002b7f;
     cursor: pointer;
     border-radius: 10px;
+    font-size: 16px;
 }
 
 #show-details, #vendor-registration {
@@ -93,9 +93,11 @@ button {
     text-align: center; /* Ensure text inside the block is also centered */
 }
 #registration-form {
+    background-color: #fff;
     margin: auto;
     padding: 20px;
     border-radius: 8px;
+    border: 1px solid #ddd;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: left;
     align-items: center;
@@ -103,6 +105,15 @@ button {
     flex-direction: column;
     gap: 10px;
     max-width: 325px;
+    margin-bottom: 2em; /* Adjust this value to control the spacing below the section */
+}
+
+#registration-form p {
+    margin-bottom: 0.5em; /* Adjust this value to reduce or increase spacing */
+}
+
+#registration-form ul {
+    margin-top: 0; /* Removes additional space between <p> and <ul> */
 }
 
 #desktop-facebook iframe {
@@ -111,6 +122,9 @@ button {
 }
 
 @media (prefers-color-scheme: dark) {
+    #registration-form {
+        background-color: #222;
+    }
     body {
         background-color: #222;
         color: #ccc;
