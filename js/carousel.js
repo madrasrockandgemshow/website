@@ -8,25 +8,25 @@ const vendors = [
     {
         image: 'JHF-Stones.jpg',
         title: 'JHF Stones',
-        description: '2',
+        description: 'We hand cut and create Gemstones for Jewelery making',
         url: ''
     },
     {
         image: 'Rough-Rock-Lapidary.jpg',
         title: 'Rough Rock & Lapidary',
-        description: 'Description for Vendor 3.',
+        description: 'Thundereggs, Agate, Jasper, Petrified Wood & Lapidary Supplies For Sale',
         url: ''
     },
     {
         image: 'DeMaris-Rock-Products.jpg',
         title: 'DeMaris Rock Products',
-        description: 'Description for Vendor 4.',
+        description: 'Beautify and protect the energy of your living space or personal space with stunning gems and minerals.',
         url: ''
     },
     {
         image: 'Zat-Blune-Stone.jpg',
         title: 'Zat Blune Stone',
-        description: 'Description for Vendor 5.',
+        description: 'Native American Indian Jewelry',
         url: ''
     },
 ];
