@@ -68,10 +68,9 @@ footer {
 }
 
 .footer-logo {
-    width: 50px; /* Adjust for desired size */
-    height: 50px;
-    border-radius: 8px; /* Slightly rounded corners */
-    object-fit: scale-down; /* Ensures the logo maintains proportions */
+    max-width: 50px; /* Adjust to desired size */
+    width: 100%; /* Maintain responsiveness */
+    height: auto; /* Preserve aspect ratio */
 }
 
 button {
