@@ -64,7 +64,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1em; /* Space between logo and text */
+    gap: 0.5em; /* Space between logo and text */
 }
 
 .footer-logo {
