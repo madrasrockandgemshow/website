@@ -1,5 +1,11 @@
 const vendors = [
     {
+        image: 'bruce-mckay.JPEG',
+        title: 'Bruce McKay',
+        description: 'A large selection of Oregon rocks in rough, slabs and polished gems. Custom made jewelry in silver, gold and platinum. Free tumbled stones for kids.',
+        url: 'https://www.instagram.com/brucejmckay/'
+    },
+    {
         image: 'Seaside-Stone-LLC.png',
         title: 'Seaside Stone, LLC',
         description: 'Beautiful stones from the beach.',
